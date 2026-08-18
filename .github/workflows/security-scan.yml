@@ -2,9 +2,9 @@ name: DevSecOps Unified Security Scan
 
 on:
   push:
-    branches: [ "main", "master" ]
+    branches: ["main", "master"]
   pull_request:
-    branches: [ "main", "master" ]
+    branches: ["main", "master"]
 
 permissions:
   contents: read
@@ -18,29 +18,23 @@ jobs:
   sast-codeql:
     name: SAST (CodeQL Analysis)
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      security-events: write
-      actions: read
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v7
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v7
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.x"
 
       - name: CodeQL Initialization
-        uses: github/codeql-action/init@v4
+        uses: github/codeql-action/init@v3
         with:
-          languages: 'python'
-          # Utiliza a query suite padrão otimizada para segurança
-          queries: security-extended
+          languages: "python"
 
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v4
+        uses: github/codeql-action/analyze@v3
 
   # ---------------------------------------------------------------------------
   # 2. SCA - OSV-Scanner (Multilinguagem: pip, etc.)
@@ -48,6 +42,3 @@ jobs:
   sca-osv:
     name: SCA (OSV-Scanner)
     uses: google/osv-scanner-action/.github/workflows/osv-scanner-reusable-pr.yml@v2.5.0
-    permissions:
-      contents: read
-      security-events: write

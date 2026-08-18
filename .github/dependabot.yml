@@ -8,6 +8,10 @@ updates:
     commit-message:
       prefix: "build(deps-dev)"
       include: "scope"
+    # Ignora atualizações major automáticas para evitar tags/versões inexistentes
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
     # Agrupa as actions em um único PR para evitar spam de Pull Requests
     groups:
       actions-dependencies:
@@ -20,7 +24,7 @@ updates:
     schedule:
       interval: "weekly"
     commit-message:
-      prefix: "fix(deps-python)"
+      prefix: "fix(deps)"
       include: "scope"
     # Agrupa todas as bibliotecas em um único PR semanal
     groups:
