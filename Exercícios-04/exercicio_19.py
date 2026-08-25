@@ -23,7 +23,7 @@ def largest_prime(number):
     for contador in range(number, 1, -1):
         if is_prime(contador):
             return contador
-                
+
     raise ValueError("Nenhum número primo encontrado no intervalo.")
 
 

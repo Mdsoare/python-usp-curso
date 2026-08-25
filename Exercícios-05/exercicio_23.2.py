@@ -4,6 +4,7 @@ Autor: Marcelo Soares
 Descrição: Escrever um programa que permita jogar o NIM contra o computador de forma ética.
 """
 
+
 def partida():
     n = int(input("Quantas peças? "))
     m = int(input("Limite de peças por jogada? "))
