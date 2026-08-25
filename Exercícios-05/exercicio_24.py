@@ -10,7 +10,7 @@ com caracteres '#' na saída.
 largura = int(input("Digite a largura: "))
 altura = int(input("Digite a altura: "))
 
-for linha in range(altura):
-    for coluna in range(largura):
+for _ in range(altura):
+    for _ in range(largura):
         print("#", end="")
     print()
