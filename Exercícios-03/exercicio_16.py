@@ -27,4 +27,3 @@ else:
         print("primo")
     else:
         print("não primo")
-        

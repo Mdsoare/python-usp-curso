@@ -33,4 +33,3 @@ try:
         print(f"O perímetro é {perimetro} e a área é {area}.")
 except ValueError:
     print("Erro: Você deve digitar um número inteiro para o lado do quadrado!")
-    

@@ -35,4 +35,3 @@ if resultado is None:
     print("O número digitado não possui dígito das dezenas.")
 else:
     print(f"O dígito das dezenas é {resultado}")
-    

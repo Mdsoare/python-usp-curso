@@ -125,7 +125,9 @@ def calcula_assinatura(texto):
 def avalia_textos(textos, ass_cp):
     """Essa função recebe uma lista de textos e uma assinatura ass_cp e deve devolver o numero (1 a n) do texto com maior probabilidade de ter sido infectado por COH-PIAH."""
     assinaturas = [calcula_assinatura(texto) for texto in textos]
-    similaridades = [compara_assinatura(assinatura, ass_cp) for assinatura in assinaturas]
+    similaridades = [
+        compara_assinatura(assinatura, ass_cp) for assinatura in assinaturas
+    ]
     return similaridades.index(min(similaridades)) + 1
 
 
@@ -141,4 +143,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    

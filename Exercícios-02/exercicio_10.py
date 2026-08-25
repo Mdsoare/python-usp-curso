@@ -20,4 +20,3 @@ if match:
         print("Entrada inválida.")
 else:
     print("Entrada inválida.")
-    

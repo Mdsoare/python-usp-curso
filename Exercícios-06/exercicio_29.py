@@ -1,7 +1,7 @@
 """
 Data: 05/05/2023
 Autor: Marcelo Soares
-Descrição: Escreva a função soma_elementos que recebe como parâmetro uma lista com números inteiros 
+Descrição: Escreva a função soma_elementos que recebe como parâmetro uma lista com números inteiros
 e devolve um número inteiro correspondente à soma dos elementos da lista recebida.
 """
 

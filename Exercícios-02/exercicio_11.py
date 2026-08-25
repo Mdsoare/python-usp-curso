@@ -24,4 +24,3 @@ if distancia >= 10:
     print("longe")
 else:
     print("perto")
-    

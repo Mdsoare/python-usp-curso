@@ -23,4 +23,3 @@ while True:
             break
     except ValueError:
         print("Entrada inválida. Digite um número inteiro válido.")
-        

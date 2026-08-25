@@ -18,4 +18,3 @@ try:
             r = r + 2
 except ValueError:
     print("Erro! Digite um número natural.")
-    

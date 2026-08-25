@@ -30,4 +30,3 @@ try:
     print(f'O maior número primo menor ou igual a "{num}" é: {largest_prime(num)}')
 except ValueError as error:
     print(f"Erro: {error}")
-    

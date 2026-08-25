@@ -14,4 +14,3 @@ for i in range(altura):
     for j in range(largura):
         print("#", end="")
     print()
-    

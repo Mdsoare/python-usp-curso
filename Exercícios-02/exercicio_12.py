@@ -25,4 +25,3 @@ else:
         print(f"as raízes da equação são {raiz1:.2f} e {raiz2:.2f}")
     else:
         print(f"as raízes da equação são {raiz2:.2f} e {raiz1:.2f}")
-        

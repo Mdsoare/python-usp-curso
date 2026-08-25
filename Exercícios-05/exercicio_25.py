@@ -14,4 +14,3 @@ for i in range(altura):
         else:
             print(" ", end="")
     print()
-    

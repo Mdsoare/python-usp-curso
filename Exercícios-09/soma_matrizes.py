@@ -22,4 +22,3 @@ if __name__ == "__main__":
     m1 = [[1], [2], [3]]
     m2 = [[2, 3, 4], [5, 6, 7]]
     print(soma_matrizes(m1, m2))
-    

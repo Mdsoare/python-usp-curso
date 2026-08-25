@@ -55,4 +55,3 @@ if todas_notas_validas:
     print(f"A média aritmética das notas é {media:.2f}.")
 else:
     print("Erro: Não foi possível calcular a média. Verifique as notas informadas.")
-    
