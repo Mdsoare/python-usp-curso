@@ -4,17 +4,17 @@ Autor: Marcelo Soares
 Descrição: Receba um número inteiro positivo na entrada e imprima os nn primeiros números ímpares naturais.
 """
 
-n = int(input("Digite o valor de n: "))
+numero = int(input("Digite um número natual: "))
 
 try:
-    if n < 0:
+    if numero < 0:
         print("Erro! Digite um número natural.")
-    elif n == 0:
+    elif numero == 0:
         print(0)
     else:
-        r = 1
-        for i in range(1, n + 1):
-            print(r)
-            r = r + 2
+        termo = 1
+        for contador in range(1, numero + 1):
+            print(termo)
+            termo = termo + 2
 except ValueError:
     print("Erro! Digite um número natural.")

@@ -9,8 +9,8 @@ def is_prime(number):
     """Verifica se um número é primo."""
     if number < 2:
         return False
-    for i in range(2, int(number**0.5) + 1):
-        if number % i == 0:
+    for contador in range(2, int(number**0.5) + 1):
+        if number % contador == 0:
             return False
     return True
 
@@ -20,9 +20,11 @@ def largest_prime(number):
     if not isinstance(number, int) or number < 2:
         raise ValueError("O número deve ser um inteiro maior ou igual a 2.")
 
-    for i in range(number, 1, -1):
-        if is_prime(i):
-            return i
+    for contador in range(number, 1, -1):
+        if is_prime(contador):
+            return contador
+                
+    raise ValueError("Nenhum número primo encontrado no intervalo.")
 
 
 try:

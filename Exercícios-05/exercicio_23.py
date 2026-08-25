@@ -57,6 +57,7 @@ def partida():
                 return 1
         else:
             print("Agora restam", n, "peças no tabuleiro.")
+    return 0
 
 
 def campeonato():

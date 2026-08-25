@@ -8,7 +8,7 @@ Calcule a distância entre os dois pontos. Se a distância for maior ou igual a 
 Caso o contrário, quando a distância for menor que 10, imprima "perto"
 """
 
-import math
+from math import hypot
 
 # Leitura das coordenadas dos dois pontos
 x1 = float(input("Digite a coordenada x do primeiro ponto: "))
@@ -16,8 +16,8 @@ y1 = float(input("Digite a coordenada y do primeiro ponto: "))
 x2 = float(input("Digite a coordenada x do segundo ponto: "))
 y2 = float(input("Digite a coordenada y do segundo ponto: "))
 
-# Cálculo da distância entre os dois pontos
-distancia = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+# Cálculo da distância entre os dois pontos de forma otimizada
+distancia = hypot(x2 - x1, y2 - y1)
 
 # Verificação da distância e impressão da resposta
 if distancia >= 10:
