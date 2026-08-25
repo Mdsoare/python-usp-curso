@@ -1,8 +1,8 @@
-'''
+"""
 Data: 05/05/2023
 Autor: Marcelo Soares
 Descrição: Refaça o exercício anterior imprimindo os retângulos sem preenchimento, de forma que os caracteres que não estiverem na borda do retângulo sejam espaços.
-'''
+"""
 
 largura = int(input("Digite a largura: "))
 altura = int(input("Digite a altura: "))
@@ -14,3 +14,4 @@ for i in range(altura):
         else:
             print(" ", end="")
     print()
+    

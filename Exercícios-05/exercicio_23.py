@@ -1,17 +1,19 @@
-'''
+"""
 Data: 05/05/2023
 Autor: Marcelo Soares
 Descrição: Escrever um programa que permita a uma "vítima" jogar o NIM contra o computador.
 OBS: O computador sempre ganha!
-'''
+"""
+
 
 def computador_escolhe_jogada(n, m):
     if n <= m:
         return n
-    elif n % (m+1) == 0:
+    elif n % (m + 1) == 0:
         return m
     else:
-        return n % (m+1)
+        return n % (m + 1)
+
 
 def usuario_escolhe_jogada(n, m):
     jogada = 0
@@ -22,11 +24,12 @@ def usuario_escolhe_jogada(n, m):
             jogada = 0
     return jogada
 
+
 def partida():
     n = int(input("Quantas peças? "))
     m = int(input("Limite de peças por jogada? "))
 
-    if n % (m+1) == 0:
+    if n % (m + 1) == 0:
         print("\nVocê começa!")
         vez_do_usuario = True
     else:
@@ -55,6 +58,7 @@ def partida():
         else:
             print("Agora restam", n, "peças no tabuleiro.")
 
+
 def campeonato():
     print("\n**** Rodada 1 ****\n")
     resultado1 = partida()
@@ -66,18 +70,27 @@ def campeonato():
     resultado3 = partida()
 
     print("\n**** Final do campeonato! ****\n")
-    print("Placar: Você", resultado1 + resultado2 + resultado3, "X", 3 - resultado1 - resultado2 - resultado3, "Computador")
+    print(
+        "Placar: Você",
+        resultado1 + resultado2 + resultado3,
+        "X",
+        3 - resultado1 - resultado2 - resultado3,
+        "Computador",
+    )
+
 
 def main():
     while True:
         try:
             print("Bem-vindo ao jogo do NIM! Escolha:\n")
-            print("1 - para jogar uma partida isolada\n2 - para jogar um campeonato\n0 - para sair do jogo\n")
+            print(
+                "1 - para jogar uma partida isolada\n2 - para jogar um campeonato\n0 - para sair do jogo\n"
+            )
             opcao = int(input())
         except ValueError:
             print("Ops! Digite um número válido.\n")
             continue
-            
+
         if opcao == 0:
             print("Você escolheu sair!\n")
             break
@@ -92,5 +105,7 @@ def main():
         else:
             print("Ops! Opção inválida\n")
 
+
 if __name__ == "__main__":
     main()
+    

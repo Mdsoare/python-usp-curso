@@ -1,8 +1,9 @@
-'''
+"""
 Data: 04/05/2023
 Autor: Marcelo Soares
 Descrição: Escreva um programa que receba um número natural nn na entrada e imprima n!n! (fatorial) na saída.
-'''
+"""
+
 n = input("Digite o valor de n: ")
 
 if not n.isdigit():
@@ -16,6 +17,7 @@ else:
         print(pd)
     else:
         fatorial = 1
-        for i in range(2, n+1):
+        for i in range(2, n + 1):
             fatorial *= i
         print(fatorial)
+        

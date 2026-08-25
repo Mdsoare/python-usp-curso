@@ -8,6 +8,7 @@ Descrição: Exercício proposto para receber dados fictícios para simular uma 
 Atualização: 18/09/2024
 """
 
+
 def validar_data(dia, mes):
     """Valida se a data é válida."""
     meses_31 = [1, 3, 5, 7, 8, 10, 12]
@@ -21,6 +22,7 @@ def validar_data(dia, mes):
     elif mes == 2 and 1 <= dia <= 28:  # Considerando ano não bissexto
         return True
     return False
+
 
 nome = input("Digite o nome do cliente: ")
 while True:
@@ -40,4 +42,6 @@ except ValueError:
     print("Digite um valor numérico para a fatura.")
 
 print(f"Olá, {nome}")
-print(f"Sua fatura com vencimento em {dia}/{mes} no valor de R$ {valor:.2f} está fechada.")
+print(
+    f"Sua fatura com vencimento em {dia}/{mes} no valor de R$ {valor:.2f} está fechada."
+)

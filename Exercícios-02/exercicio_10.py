@@ -1,8 +1,8 @@
-'''
+"""
 Data: 04/05/2023
 Autor: Marcelo Soares
 Descrição: Receba 3 números inteiros na entrada e imprima crescente se eles forem dados em ordem crescente. Caso contrário, imprima não está em ordem crescente
-'''
+"""
 
 import re
 
@@ -20,3 +20,4 @@ if match:
         print("Entrada inválida.")
 else:
     print("Entrada inválida.")
+    

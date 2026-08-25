@@ -8,6 +8,7 @@ Descrição: Faça um programa em Python que recebe um número inteiro e imprime
 Atualização: 18/09/2024
 """
 
+
 def obter_digito_dezenas(numero):
     """Obtém o dígito das dezenas de um número inteiro.
 
@@ -24,6 +25,7 @@ def obter_digito_dezenas(numero):
         return None  # Números de um dígito não têm dezena
     return (numero // 10) % 10
 
+
 # Entrada do usuário
 numero = int(input("Digite um número inteiro: "))
 
@@ -33,3 +35,4 @@ if resultado is None:
     print("O número digitado não possui dígito das dezenas.")
 else:
     print(f"O dígito das dezenas é {resultado}")
+    

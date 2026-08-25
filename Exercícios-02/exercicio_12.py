@@ -1,8 +1,8 @@
-'''
+"""
 Data: 04/05/2023
 Autor: Marcelo Soares
 Descrição: escreva um programa que calcula as raízes de uma equação do segundo grau.
-'''
+"""
 
 import math
 
@@ -11,7 +11,7 @@ a = float(input("Digite o valor de a: "))
 b = float(input("Digite o valor de b: "))
 c = float(input("Digite o valor de c: "))
 
-delta = b ** 2 - 4 * a * c
+delta = b**2 - 4 * a * c
 
 if delta < 0:
     print("esta equação não possui raízes reais")
@@ -25,3 +25,4 @@ else:
         print(f"as raízes da equação são {raiz1:.2f} e {raiz2:.2f}")
     else:
         print(f"as raízes da equação são {raiz2:.2f} e {raiz1:.2f}")
+        

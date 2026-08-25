@@ -8,6 +8,7 @@ Descrição: Exercício proposto para calculo de perímetro e área de um quadra
 Atualização: 18/09/2024
 """
 
+
 def calcular_quadrado(lado):
     """Calcula o perímetro e a área de um quadrado.
 
@@ -18,8 +19,9 @@ def calcular_quadrado(lado):
         tuple: Uma tupla contendo o perímetro e a área do quadrado, nessa ordem.
     """
     perimetro = lado * 4
-    area = lado ** 2
+    area = lado**2
     return perimetro, area
+
 
 try:
     lado = int(input("Digite o valor correspondente ao lado de um quadrado: "))
@@ -31,3 +33,4 @@ try:
         print(f"O perímetro é {perimetro} e a área é {area}.")
 except ValueError:
     print("Erro: Você deve digitar um número inteiro para o lado do quadrado!")
+    

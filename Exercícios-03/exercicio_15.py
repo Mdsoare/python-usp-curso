@@ -1,8 +1,9 @@
-'''
+"""
 Data: 05/05/2023
 Autor: Marcelo Soares
 Descrição: Escreva um programa que receba um número inteiro na entrada, calcule e imprima a soma dos dígitos deste número na saída
-'''
+"""
+
 while True:
     num = input("Digite um número inteiro positivo: ")
 

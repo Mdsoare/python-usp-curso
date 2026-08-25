@@ -7,6 +7,8 @@ Autor: Marcelo Soares
 Descrição: Exercício proposto para receber quatro notas, calcular e imprima a média aritmética.
 Atualização: 18/09/2024
 """
+
+
 def calcular_media(notas):
     """Calcula a média aritmética de uma lista de notas.
 
@@ -18,6 +20,7 @@ def calcular_media(notas):
     """
     return sum(notas) / len(notas)
 
+
 def validar_notas(notas):
     """Verifica se todas as notas estão no intervalo de 0 a 10.
 
@@ -28,6 +31,7 @@ def validar_notas(notas):
         bool: True se todas as notas forem válidas, False caso contrário.
     """
     return all(0 <= nota <= 10 for nota in notas)
+
 
 notas = []
 todas_notas_validas = True
@@ -51,3 +55,4 @@ if todas_notas_validas:
     print(f"A média aritmética das notas é {media:.2f}.")
 else:
     print("Erro: Não foi possível calcular a média. Verifique as notas informadas.")
+    
